@@ -206,4 +206,4 @@ This wasn't a shortcut; it came out of testing. During Milestone 4 calibration, 
 
 ## Walkthrough Video
 
-🎥 **Project Walkthrough:** [Video demo]([https://youtu.be/your-video-link](https://www.youtube.com/watch?v=lD65hC3HxyI))
+🎥 **Project Walkthrough:** [Video demo]([https://www.youtube.com/watch?v=lD65hC3HxyI])
