@@ -203,7 +203,6 @@ This wasn't a shortcut; it came out of testing. During Milestone 4 calibration, 
 1. **Generating the confidence-scoring combination logic (Milestone 4).** Directed the AI tool to implement `combine_scores()` directly from planning.md's stated formula (weights and disagreement penalty), plus a second stylometric signal function based on the Detection Signals section. It produced a working implementation, including an initial version of the stylometric signal that used raw type-token ratio as one of three sub-metrics. This was overridden after testing: raw TTR was flagged as unreliable on short text (a known statistical confound — TTR is driven by length, not authorship), so it was first corrected to Root TTR, and when that still didn't discriminate correctly even on a fair, longer test case, it was removed from the implementation entirely rather than kept to match the original plan.
 
 2. **Debugging a result that didn't match expectations.** When a combined `confidence` value returned by the API didn't match the value hand-calculated from planning.md's formula, the AI tool's suggested debugging approach was to independently verify the running server was actually serving the latest code (Flask wasn't running in debug/auto-reload mode). This caught a real, recurring issue across multiple milestones — edits to `app.py`/`detector.py` require a manual server restart — rather than incorrectly concluding the formula itself was implemented wrong.
-
 ## Walkthrough Video
 
-🎥 **Project Walkthrough:** [Video demo]([https://www.youtube.com/watch?v=lD65hC3HxyI])
+🎥 **Project Walkthrough:** [Video Demo](https://www.youtube.com/watch?v=lD65hC3HxyI)
